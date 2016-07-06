@@ -10,7 +10,7 @@ from sqlalchemy_utils import database_exists, create_database
 import psycopg2
 import pandas as pd
 
-os.chdir('/Users/Natalie/Documents/Insight/PERM_excel')
+os.chdir('~/Documents/Insight/PERM_excel')
 
 keys_dic={}
 
@@ -33,7 +33,7 @@ PERM_data.columns.values
 
 dbname = 'PERM_db'
 username = 'Natalie'
-pswd = 'green,earth88'
+pswd = '*******'
 
 engine = sql.create_engine('postgresql://%s:%s@localhost/%s'%(username,pswd,dbname))
 print engine.url
